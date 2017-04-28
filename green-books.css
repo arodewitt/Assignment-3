@@ -1,0 +1,102 @@
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  color: #2B2B2B;
+}
+h2{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.wrapper {
+  width:100%;
+  height:100vh;
+  position: fixed;
+  top:0px;
+  left:0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+.navigation {
+  box-sizing:border-box;
+  padding:30px;
+  width:27%;
+  height:100vh;
+  background-color: #ffffff;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*styling for green books home starts here*/
+.books{
+  width:50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: 90;
+}
+.horiz{
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position:right top;
+  background-size: cover;
+  height:90vh;
+  width:450px;
+  position:relative;
+  margin-left: -250px;
+  /*box-shadow: 3px 3px 5px #888888;*/
+}
+div.horiz:hover {
+  transform:translate(250px, 0);
+  transition: all .1s ease-out;
+}
+.sanc{
+  background-color:#737d42;
+  background-image: url('sanc-cover.svg');
+  z-index: 50;
+  box-shadow: 3px 3px 5px #737d42;
+}
+.oasis{
+  background-color:#00795c;
+  background-image: url('oasis-cover.svg');
+  z-index: 40;
+}
+.shield{
+  background-color:#255037;
+  background-image: url('shield-cover.svg');
+  z-index: 30;
+}
+.pronoun{
+  background-color:#99af49;
+  background-image: url('pronoun-cover.svg');
+  z-index: 20;
+}
+.home{
+  background-color:#9fb49f;
+  background-image: url('home-cover.svg');
+  z-index: 10;
+}
+/*styling for green books teaser starts here*/
